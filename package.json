@@ -2,7 +2,7 @@
   "name": "fi-credentials",
   "title": "Fi Credentials",
   "description": "Simple JSON credentials loader for local and S3 sources.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": false,
   "license": "MIT",
   "author": "Final Development Studio <sorcery@finaldevstudio.com> (http://finaldevstudio.com)",
