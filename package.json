@@ -1,0 +1,42 @@
+{
+  "name": "fi-credentials",
+  "title": "Fi Credentials",
+  "description": "Simple JSON credentials loader for local and S3 sources.",
+  "version": "0.0.0",
+  "private": false,
+  "license": "MIT",
+  "author": "Final Development Studio <sorcery@finaldevstudio.com> (http://finaldevstudio.com)",
+  "contributors": [
+    "Santiago G. Marín <santiago@finaldevstudio.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finaldevstudio/fi-credentials.git"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/*.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.110.0",
+    "fi-is": "^1.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0",
+    "mocha-steps": "^1.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/finaldevstudio/fi-credentials/issues"
+  },
+  "homepage": "https://github.com/finaldevstudio/fi-credentials",
+  "main": "lib/index.js",
+  "keywords": [
+    "grouping",
+    "mongoose",
+    "partials",
+    "fi-seed",
+    "schemas",
+    "loader",
+    "model"
+  ]
+}
