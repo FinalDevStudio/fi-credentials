@@ -5,16 +5,16 @@ const credentials = require('..');
 
 describe('Fi Credentials from local', function () {
 
-  step('should be an object', function () {
+  it('should be an object', function () {
     expect(credentials).to.be.an('object');
   });
 
-  step('should have a load and get methods', function () {
+  it('should have a load and get methods', function () {
     expect(credentials.load).to.be.a('function');
     expect(credentials.get).to.be.a('function');
   });
 
-  step('should reject if config is not set', function (done) {
+  it('should reject if config is not set', function (done) {
     credentials.load().then(() => {
       done(new Error('This shouldn\'t be called!'));
     }).catch(err => {
@@ -23,7 +23,7 @@ describe('Fi Credentials from local', function () {
     });
   });
 
-  step('should reject if config is not an object', function (done) {
+  it('should reject if config is not an object', function (done) {
     credentials.load(1).then(() => {
       done(new Error('This shouldn\'t be called!'));
     }).catch(err => {
@@ -32,7 +32,7 @@ describe('Fi Credentials from local', function () {
     });
   });
 
-  step('should reject if config.local is not an object', function (done) {
+  it('should reject if config.local is not an object', function (done) {
     const config = {};
 
     credentials.load(config).then(() => {
@@ -43,7 +43,7 @@ describe('Fi Credentials from local', function () {
     });
   });
 
-  step('should reject if config.local.path is not a string', function (done) {
+  it('should reject if config.local.path is not a string', function (done) {
     const config = {
       local: {}
     };
@@ -56,7 +56,7 @@ describe('Fi Credentials from local', function () {
     });
   });
 
-  step('should reject if credentials are not JSON', function (done) {
+  it('should reject if credentials are not JSON', function (done) {
     const config = {
       local: {
         path: 'test/credentials.txt'
@@ -71,7 +71,7 @@ describe('Fi Credentials from local', function () {
     });
   });
 
-  step('should load valid JSON credentials', function (done) {
+  it('should load valid JSON credentials', function (done) {
     const config = {
       local: {
         path: 'test/credentials.json'
