@@ -1,4 +1,4 @@
-# Fi Credentials [![Build Status](https://travis-ci.org/FinalDevStudio/fi-credentials.svg?branch=master)](https://travis-ci.org/FinalDevStudio/fi-credentials)
+# Fi Credentials
 
 Simple JSON credentials loader for local and S3 sources.
 

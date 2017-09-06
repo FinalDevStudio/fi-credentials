@@ -16,6 +16,9 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test/*.js"
   },
+  "engines": {
+    "node": ">=6.0.0 <7.0.0"
+  },
   "dependencies": {
     "aws-sdk": "^2.110.0",
     "fi-is": "^1.2.0"
