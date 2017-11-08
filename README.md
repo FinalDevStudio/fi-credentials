@@ -19,7 +19,7 @@ const credentials = require('fi-credentials');
 
 ### Loading credentials
 
-This module exports a `Function` that returns a `Promise` and you must call it with a configuration `Object`:
+This module exports an ` Object` with the following `Functions`:
 
 ```js
 const credentials = require('fi-credentials');
@@ -52,6 +52,7 @@ It must be an `Object` with the following parameters:
 | `local` | `Object` | If `source` is not `'s3'` | `undefined` | The local configuration object. |
 | `local.path` | `String` | If `source` is not `'s3'` | `undefined` | The local path to the credentials file. |
 
+
 #### Example
 
 ```js
@@ -79,10 +80,9 @@ const config = {
 
 # API
 
-
 Your credential's file must be a valid JSON file. This will be stored into the module to acces its properties with the followind methods:
 
-| Method | Arguments | Description |
-| --- | --- | --- |
-| `load` | `config` | This method is used to load the credentials using the provided configuration object. |
-| `get` | `key` | If key is not empty, it will return the value for that key in the loaded credentials object. If key is empty, the it'll return the complete credentials object. |
+| Method | Arguments | Returns | Description
+| --- | --- | --- |---|
+| `load` | `config` | `Promise` | This method is used to load the credentials using the provided configuration object. |
+| `get` | `key` | `Mixed` | If key is not empty, it will return the value for that key in the loaded credentials object. If key is empty, then it'll return the complete credentials object. |
