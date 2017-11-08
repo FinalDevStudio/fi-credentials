@@ -19,7 +19,7 @@ const credentials = require('fi-credentials');
 
 ### Loading credentials
 
-This module exports a `Function` that resturns a `Promise` and you must call it with a configuration `Object`:
+This module exports a `Function` that returns a `Promise` and you must call it with a configuration `Object`:
 
 ```js
 const credentials = require('fi-credentials');
