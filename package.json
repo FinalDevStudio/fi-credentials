@@ -21,13 +21,13 @@
     "node": ">=6.0.0 <7.0.0"
   },
   "dependencies": {
-    "aws-sdk": "^2.110.0",
+    "aws-sdk": "^2.149.0",
     "fi-is": "^1.2.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "jsdox": "^0.4.10",
-    "mocha": "^3.5.0"
+    "mocha": "^4.0.1"
   },
   "bugs": {
     "url": "https://github.com/finaldevstudio/fi-credentials/issues"
