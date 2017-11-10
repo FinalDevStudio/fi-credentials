@@ -102,7 +102,7 @@ describe('Fi Credentials from local', function () {
     });
   });
 
-  it('should load credentials from memory', function (done) {
+  it('should resolve to in-memory credentials', function (done) {
     credentials.load().then((creds) => {
       expect(creds).to.be.an('object');
       expect(creds.version).to.equal(1);
@@ -125,7 +125,7 @@ describe('Fi Credentials from local', function () {
     });
   });
 
-  it('should resolve to in-memory credentials', function (done) {
+  it('should reload a valid JSON credentials', function (done) {
     const config = {
       local: {
         path: 'test/credentials.2.json'
