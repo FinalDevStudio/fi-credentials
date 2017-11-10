@@ -14,7 +14,8 @@
     "url": "git+https://github.com/finaldevstudio/fi-credentials.git"
   },
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test/*.js"
+    "test": "./node_modules/mocha/bin/mocha test/*.js",
+    "docs": "node_modules/.bin/jsdox lib/ --output docs"
   },
   "engines": {
     "node": ">=6.0.0 <7.0.0"
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "jsdox": "^0.4.10",
     "mocha": "^3.5.0"
   },
   "bugs": {
