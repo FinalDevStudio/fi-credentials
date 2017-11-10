@@ -1,10 +1,11 @@
 # Fi Credentials
 
+[![Build Status](https://travis-ci.org/FinalDevStudio/fi-credentials.svg?branch=master)](https://travis-ci.org/FinalDevStudio/fi-credentials) [![npm](https://img.shields.io/npm/v/fi-credentials.svg)]() [![npm](https://img.shields.io/npm/l/express.svg)]()
+
 Simple JSON credentials loader for local and S3 sources.
 
 
 ## Installing
-
 ```sh
 npm install --save fi-credentials
 ```
@@ -24,10 +25,13 @@ This module exports an `Object` that exposes the following `Functions`:
 ```js
 const credentials = require('fi-credentials');
 
-credentials.load(config).then(() => {
-  console.log('Credentials loaded!');
+credentials.load(config).then((creds) => {
+  console.log('Credentials loaded!', creds);
 
+  creds // All the credentials object.
   credentials.get(); // All the credentials object.
+
+  creds.database; // Database property values only.
   credentials.get('database'); // Database property values only.
 })
 
@@ -35,6 +39,8 @@ credentials.load(config).then(() => {
   throw err;
 });
 ```
+
+**IMPORTANT:** Your credential's file must be a valid JSON file.
 
 
 ### Configuration
@@ -80,9 +86,4 @@ const config = {
 
 # API
 
-Your credential's file must be a valid JSON file. This will be stored into the module to acces its properties with the followind methods:
-
-| Method | Arguments | Returns | Description
-| --- | --- | --- |---|
-| `load` | `config` | `Promise` | This method is used to load the credentials using the provided configuration object. |
-| `get` | `key` | `Mixed` | If key is not empty, it will return the value for that key in the loaded credentials object. If key is empty, then it'll return the complete credentials object. |
+View the [API docs here](docs/index.md).
