@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "chai": "^4.1.2",
-    "jsdox": "^0.4.10",
     "mocha": "^4.0.1"
   },
   "bugs": {
