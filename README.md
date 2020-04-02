@@ -1,3 +1,7 @@
+---
+### No longer maintained.
+---
+
 # Fi Credentials
 
 [![Build Status](https://travis-ci.org/FinalDevStudio/fi-credentials.svg?branch=master)](https://travis-ci.org/FinalDevStudio/fi-credentials) [![npm](https://img.shields.io/npm/v/fi-credentials.svg)]() [![npm](https://img.shields.io/npm/l/express.svg)]()
